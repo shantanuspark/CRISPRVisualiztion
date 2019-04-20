@@ -2,5 +2,7 @@
 
 *.png
 *.fasta
+*.svg
+*.ct
 
 
