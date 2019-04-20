@@ -1,0 +1,103 @@
+{
+	"CRISPRs": [{
+		"avgRLength": 36,
+		"avgSLength": 30,
+		"consensusRepeat": "GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC",
+		"endRange": 861250,
+		"isValid": true,
+		"noOfRepeats": 7,
+		"spacerRepeat": [{
+			"lengths": [36, 30],
+			"position": 860819,
+			"repeat": "GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC",
+			"spacer": "TGCGCTGGTTGATTTCTTCTTGCGCTTTTT"
+		}, {
+			"lengths": [36, 30],
+			"position": 860885,
+			"repeat": "GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC",
+			"spacer": "TTATATGAACATAACTCAATTTGTAAAAAA"
+		}, {
+			"lengths": [36, 30],
+			"position": 860951,
+			"repeat": "GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC",
+			"spacer": "AGGAATATCCGCAATAATTAATTGCGCTCT"
+		}, {
+			"lengths": [36, 30],
+			"position": 861017,
+			"repeat": "GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC",
+			"spacer": "AGTGCCGAGGAAAAATTAGGTGCGCTTGGC"
+		}, {
+			"lengths": [36, 30],
+			"position": 861083,
+			"repeat": "GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC",
+			"spacer": "TAAATTTGTTTAGCAGGTAAACCGTGCTTT"
+		}, {
+			"lengths": [36, 30],
+			"position": 861149,
+			"repeat": "GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC",
+			"spacer": "TTCAGCACACTGAGACTTGTTGAGTTCCAT"
+		}, {
+			"position": 861215,
+			"repeat": "GTTTTAGAGCTATGCTGTTTTGAATGGTCTCCATTC"
+		}],
+		"startRange": 860819
+	}, {
+		"avgRLength": 33,
+		"avgSLength": 33,
+		"consensusRepeat": "TATTTCAATCCACTCACCCATGAAGGGTGAGAC",
+		"endRange": 1283730,
+		"isValid": true,
+		"noOfRepeats": 4,
+		"spacerRepeat": [{
+			"lengths": [33, 33],
+			"position": 1283500,
+			"repeat": "TCTTTCAATCCACTCACCCATGAAGGGTGAGAC",
+			"spacer": "GCTGTGACATTGCGGGATGTAATCAAAGTAAAA"
+		}, {
+			"lengths": [33, 32],
+			"position": 1283566,
+			"repeat": "AATTTCAATCCACTCACCCATGAAGGGTGAGAC",
+			"spacer": "TAAAGCAAACCTAGCAGAAGCAGAAAATGACT"
+		}, {
+			"lengths": [33, 34],
+			"position": 1283631,
+			"repeat": "TATTTCAATCCACTCACCCATGAAGGGTGAGAC",
+			"spacer": "CTGATGTAATTGGTGATTTTCGTGATATGCTTTT"
+		}, {
+			"position": 1283698,
+			"repeat": "TATTTCAATCCACTCACCCATGAAGGGTGAGAC"
+		}],
+		"startRange": 1283500
+	}, {
+		"avgRLength": 19,
+		"avgSLength": 40,
+		"endRange": 1539481,
+		"isValid": false,
+		"noOfRepeats": 4,
+		"spacerRepeat": [{
+			"lengths": [19, 60],
+			"position": 1539285,
+			"repeat": "TTCCCAAAATAATCAAAAA",
+			"spacer": "AGCCGTTGCGATAAATTCTGTGATGTATTTCACAGTCCATGTCATTTCCATGTTTTCTGG"
+		}, {
+			"lengths": [19, 33],
+			"position": 1539364,
+			"repeat": "TTTCCTCCAAATAATAAAA",
+			"spacer": "TATAACAAATACCATTTTAACAGGCTTATTGAT"
+		}, {
+			"lengths": [19, 28],
+			"position": 1539416,
+			"repeat": "GAATGTAAAGGTAATAAAA",
+			"spacer": "TAATAAATAAAATGATCATTAAGTGTTA"
+		}, {
+			"position": 1539463,
+			"repeat": "TTTTCACACAATAATAAAA"
+		}],
+		"startRange": 1539285
+	}],
+	"noOfBases": 1852433,
+	"noOfCRISPRs": 3,
+	"organism": "NC_002737.2 Streptococcus pyogenes M1 GAS, complete genome",
+	"timeTaken": 738.1250092983246,
+	"validCrisprs": 2
+}

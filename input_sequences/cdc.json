@@ -1,0 +1,219 @@
+{
+	"CRISPRs": [{
+		"avgRLength": 19,
+		"avgSLength": 26,
+		"endRange": 467627,
+		"isValid": false,
+		"noOfRepeats": 3,
+		"spacerRepeat": [{
+			"lengths": [19, 31],
+			"position": 467518,
+			"repeat": "AAATATATATATTTATAAT",
+			"spacer": "AAACCATAAATTAACTGATGTCCAAAATAAA"
+		}, {
+			"lengths": [19, 22],
+			"position": 467568,
+			"repeat": "AATAAAATAATTTTATAAT",
+			"spacer": "AATATTATTAGAAACATACCTT"
+		}, {
+			"position": 467609,
+			"repeat": "TATTTTAGTTTTTTATAAT"
+		}],
+		"startRange": 467518
+	}, {
+		"avgRLength": 26,
+		"avgSLength": 19,
+		"endRange": 576242,
+		"isValid": false,
+		"noOfRepeats": 4,
+		"spacerRepeat": [{
+			"lengths": [26, 19],
+			"position": 576082,
+			"repeat": "GCTTACTCCTTTCATTTTTTAATTCA",
+			"spacer": "ATATTTACCTTAGCAGGCT"
+		}, {
+			"lengths": [26, 19],
+			"position": 576127,
+			"repeat": "GTTTTTCTTTCTCTTTCTTTAATTCA",
+			"spacer": "TTATGTTCGTTAAAAATCT"
+		}, {
+			"lengths": [26, 19],
+			"position": 576172,
+			"repeat": "GCTTATTCTCCTCATTTCTTAATTCA",
+			"spacer": "ACATTCACTATGGGAAGCC"
+		}, {
+			"position": 576217,
+			"repeat": "GTTTACTCTTTTCATTATTTAATTGA"
+		}],
+		"startRange": 576082
+	}, {
+		"avgRLength": 20,
+		"avgSLength": 29,
+		"endRange": 736407,
+		"isValid": false,
+		"noOfRepeats": 4,
+		"spacerRepeat": [{
+			"lengths": [20, 47],
+			"position": 736240,
+			"repeat": "TTTTAGGATCTATTATTCTT",
+			"spacer": "AATTTGTATTTCTTATCTACATAAATATCTTTGCATCTTATATCTAA"
+		}, {
+			"lengths": [20, 22],
+			"position": 736307,
+			"repeat": "TTTTTTGAACTTTAATCTTT",
+			"spacer": "CAAACTCTTTTATAAGCTTAAT"
+		}, {
+			"lengths": [20, 19],
+			"position": 736349,
+			"repeat": "TATATTGTGAGTTAATCTTT",
+			"spacer": "TGTTAATCCCATTTTGTTT"
+		}, {
+			"position": 736388,
+			"repeat": "TATATAGTGATCTAATCTTT"
+		}],
+		"startRange": 736240
+	}, {
+		"avgRLength": 21,
+		"avgSLength": 45,
+		"endRange": 3450877,
+		"isValid": false,
+		"noOfRepeats": 4,
+		"spacerRepeat": [{
+			"lengths": [21, 45],
+			"position": 3450659,
+			"repeat": "TAACATGAGATGTATTTAAAT",
+			"spacer": "AGATTAAATGTCTCTTCTGATTGTAAGGCATGTATAGTTGAACAT"
+		}, {
+			"lengths": [21, 45],
+			"position": 3450725,
+			"repeat": "TAACATGAGATGTATTTAAAT",
+			"spacer": "GCAACTACAATAGCAAGTGTAGCTACAGGTATGGCGATTGAACAG"
+		}, {
+			"lengths": [21, 45],
+			"position": 3450791,
+			"repeat": "TAACATAGGATGTATTTAAAT",
+			"spacer": "TTGTATTGTTTACATACTTTATTTAATATTGCTTTAGTTGAACAA"
+		}, {
+			"position": 3450857,
+			"repeat": "TAACATGAGATGTATTTAAGC"
+		}],
+		"startRange": 3450659
+	}, {
+		"avgRLength": 29,
+		"avgSLength": 36,
+		"consensusRepeat": "GCTGAACATTAACATGAGATGTATTTAAA",
+		"endRange": 3451485,
+		"isValid": true,
+		"noOfRepeats": 6,
+		"spacerRepeat": [{
+			"lengths": [29, 37],
+			"position": 3451130,
+			"repeat": "GCTGAACATTAACATGAGATGTATTTAAA",
+			"spacer": "CTAAGAGGTGATAACGGCGAGGGTGGGGAACTCTATT"
+		}, {
+			"lengths": [29, 37],
+			"position": 3451196,
+			"repeat": "GCTGAACATTAACATGAGATGTATTTAAA",
+			"spacer": "CTACACTCTAGCCGTTAGGTCATCACCTGTTAAATCT"
+		}, {
+			"lengths": [29, 37],
+			"position": 3451262,
+			"repeat": "GCTGAACATTAACATGAGATGTATTTAAA",
+			"spacer": "CGTTAACTTCTGAGTATTATTATCTTGCAATGTATCT"
+		}, {
+			"lengths": [29, 36],
+			"position": 3451328,
+			"repeat": "GCTGAACATTAACATGAGATGTATTTAAA",
+			"spacer": "CTTGTTTATTAGATGTATGTATTATGTGATATACTA"
+		}, {
+			"lengths": [29, 35],
+			"position": 3451393,
+			"repeat": "GCTGAACATTAACATGAGATGTATTTAAA",
+			"spacer": "TCTAATATATGGATTACAATAACAACAGTGTTTAC"
+		}, {
+			"position": 3451457,
+			"repeat": "ATTGAACATTAACATTAAATGTATTGAAA"
+		}],
+		"startRange": 3451130
+	}, {
+		"avgRLength": 30,
+		"avgSLength": 34,
+		"consensusRepeat": "GTTGAACATTAACATGAGATGTATTTAAAT",
+		"endRange": 3452613,
+		"isValid": true,
+		"noOfRepeats": 4,
+		"spacerRepeat": [{
+			"lengths": [30, 35],
+			"position": 3452391,
+			"repeat": "GTTGAACATTAACATGAGATGTATTTAAAT",
+			"spacer": "TTTTGTTAGTTATTATGTCGTGTATTTTTTCTAAA"
+		}, {
+			"lengths": [30, 34],
+			"position": 3452456,
+			"repeat": "GTTGAACATTAACATGAGATGTATTTAAAT",
+			"spacer": "TCCATAAAGTTTTCTCCTTTAAAAATGTTATTGT"
+		}, {
+			"lengths": [30, 34],
+			"position": 3452520,
+			"repeat": "GTTGAACATTAACATGAGATGTATTTAAAT",
+			"spacer": "ATTATGATGGTGAGATAGTTTATGATAGCGATAA"
+		}, {
+			"position": 3452584,
+			"repeat": "GTTGAACATTAACATGAGATGTATTTAAAT"
+		}],
+		"startRange": 3452391
+	}, {
+		"avgRLength": 28,
+		"avgSLength": 38,
+		"consensusRepeat": "GTTGAACAATAACATAGGATGTATTTAA",
+		"endRange": 3467212,
+		"isValid": true,
+		"noOfRepeats": 3,
+		"spacerRepeat": [{
+			"lengths": [28, 38],
+			"position": 3467053,
+			"repeat": "GTTGAACAATAACATAGGATGTATTTAA",
+			"spacer": "ATTCATTCAATTGATTTATTTTATCATTATATATTGTA"
+		}, {
+			"lengths": [28, 38],
+			"position": 3467119,
+			"repeat": "GTTGAACAATAACATAGGATGTATTTAA",
+			"spacer": "ATTCTTTATATAGATGCATATCTTCTAATACTCCACCT"
+		}, {
+			"position": 3467185,
+			"repeat": "GTTGAACATTAACATGAGATGTATTTAA"
+		}],
+		"startRange": 3467053
+	}, {
+		"avgRLength": 20,
+		"avgSLength": 45,
+		"endRange": 3467714,
+		"isValid": false,
+		"noOfRepeats": 4,
+		"spacerRepeat": [{
+			"lengths": [20, 44],
+			"position": 3467499,
+			"repeat": "AACATGAGATGTATTTAAAT",
+			"spacer": "TATTGTAATAACCTTTCTATCTCTGGGGCATGATATTGAACAAC"
+		}, {
+			"lengths": [20, 46],
+			"position": 3467563,
+			"repeat": "AACATGAGATGTATTTAAAT",
+			"spacer": "GCATAGATTTCATAATGTTCAATATTTATATTCTTTGTTGAACAAT"
+		}, {
+			"lengths": [20, 46],
+			"position": 3467629,
+			"repeat": "AACATAAGATGTATTTAAAT",
+			"spacer": "TTAAAACTCATTTCTGCTGCAAAAAGAGCGTTACTAGTTGAACAAT"
+		}, {
+			"position": 3467695,
+			"repeat": "AACATGAGATGTATTTGAGC"
+		}],
+		"startRange": 3467499
+	}],
+	"noOfBases": 3892029,
+	"noOfCRISPRs": 8,
+	"organism": "CP006907.1 Clostridium botulinum CDC_297, complete genome",
+	"timeTaken": 1553.781251192093,
+	"validCrisprs": 3
+}

@@ -1,0 +1,4 @@
+Flask==1.0.2
+dna-features-viewer==0.2.2
+biopython==1.72
+Werkzeug==0.14.1

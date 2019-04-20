@@ -1,0 +1,8 @@
+.vscode/
+
+*.png
+*.fasta
+*.svg
+*.ct
+
+

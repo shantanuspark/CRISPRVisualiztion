@@ -1,0 +1,746 @@
+{
+	"CRISPRs": [{
+		"avgRLength": 31,
+		"avgSLength": 35,
+		"consensusRepeat": "TGTTAAAATCAGACCGTTACGGTATGGAAAC",
+		"endRange": 153244,
+		"isValid": true,
+		"noOfRepeats": 8,
+		"spacerRepeat": [{
+			"lengths": [31, 33],
+			"position": 152747,
+			"repeat": "TGTTAAAATCAGACCGTTACGGTATGGAAAC",
+			"spacer": "CCATTTGTGTTAATAATGAAATGAATTTCATCA"
+		}, {
+			"lengths": [31, 34],
+			"position": 152811,
+			"repeat": "TGTTAAAATCAGACCGTTACGGTATGGAAAC",
+			"spacer": "AAGATGTTATAAAAAGTAGTGATTGGAACTATTT"
+		}, {
+			"lengths": [31, 36],
+			"position": 152876,
+			"repeat": "AGTTAAAATCAGACCGTTACGGTATGGAAAC",
+			"spacer": "ATTAGGTAAAGGTTCTGGAAAATCTACTATGTGTTG"
+		}, {
+			"lengths": [31, 35],
+			"position": 152943,
+			"repeat": "TGTTAAAATCAGACCGTTACGGTATGGAAAC",
+			"spacer": "CATAAATCAATAACAATTGAAGTATTTTCATCTAT"
+		}, {
+			"lengths": [31, 37],
+			"position": 153009,
+			"repeat": "TGTTAAAATCAGACCGTTACGGTATGGAAAC",
+			"spacer": "TTTTTTATAGTTTGCTCATATTTTTGTGCTTTCTTGC"
+		}, {
+			"lengths": [31, 42],
+			"position": 153077,
+			"repeat": "TGTTAAAATCAGACCGTTACGGTATGGAAAC",
+			"spacer": "TCCTTCTCAATAACATAAACGTGCTTAATCTTGCCAGCTTCT"
+		}, {
+			"lengths": [31, 33],
+			"position": 153150,
+			"repeat": "TGTTAAAATCAGACCGTTACGGTATGGAAAC",
+			"spacer": "ATCTCTATACAGACTGAAAATGGATACATAACA"
+		}, {
+			"position": 153214,
+			"repeat": "AGTTAAAATCAGACCGTTACGGTATGGAAAC"
+		}],
+		"startRange": 152747
+	}, {
+		"avgRLength": 30,
+		"avgSLength": 39,
+		"consensusRepeat": "GTTTCCATACCGAAACGGTCTGATTTTAAC",
+		"endRange": 161019,
+		"isValid": true,
+		"noOfRepeats": 7,
+		"spacerRepeat": [{
+			"lengths": [30, 39],
+			"position": 160575,
+			"repeat": "GTTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "AACATTCCTAAGCAATTGATACTTGTATAATTTATAGGT"
+		}, {
+			"lengths": [30, 36],
+			"position": 160644,
+			"repeat": "GTTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "CTCATCGTCTGTAAATCTATTGTAGTCGTCCTCCAT"
+		}, {
+			"lengths": [30, 36],
+			"position": 160710,
+			"repeat": "GTTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "TAAAATGGTGATAAAAATGGCATATAGAATAATTAG"
+		}, {
+			"lengths": [30, 52],
+			"position": 160776,
+			"repeat": "GTTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "AAATTTTAACAGTGTTTGATGATAAATCATACCATAATTTTGTAGTATCATT"
+		}, {
+			"lengths": [30, 36],
+			"position": 160858,
+			"repeat": "GTTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "AATTTAAAAATAAAAAGAAAATATTTAATAAAAAAA"
+		}, {
+			"lengths": [30, 36],
+			"position": 160924,
+			"repeat": "GTTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "TGTGTTAGTATGTCTTGAAATTAAAGCAAAATCTGT"
+		}, {
+			"position": 160990,
+			"repeat": "GTTTCCATACCGAAACGGTCTGATTTTAAC"
+		}],
+		"startRange": 160575
+	}, {
+		"avgRLength": 30,
+		"avgSLength": 39,
+		"consensusRepeat": "GTTTCCATACCGTAACGGTCTGATTTTAAC",
+		"endRange": 288529,
+		"isValid": true,
+		"noOfRepeats": 21,
+		"spacerRepeat": [{
+			"lengths": [30, 37],
+			"position": 287107,
+			"repeat": "GTTTTTACACCGTAACGGTCTGATTTTAAC",
+			"spacer": "TTATAAAGTTTTGTGGGAAGCTAAAAGTCAAACATAT"
+		}, {
+			"lengths": [30, 51],
+			"position": 287174,
+			"repeat": "GTTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "TATTGTTTATTTCTTCAGTTGCAGGGGAATCAATCTTAGATATGAAGTATA"
+		}, {
+			"lengths": [30, 41],
+			"position": 287255,
+			"repeat": "GTTTCCATGCCGAAACGGTCTGATTTTAAC",
+			"spacer": "AGGACTGGATAAGTCATGCCGTAGAGAGGCCAGGAGCACTA"
+		}, {
+			"lengths": [30, 41],
+			"position": 287326,
+			"repeat": "GTTTCCATACCAAAACGGTCTGATTTTAAC",
+			"spacer": "TACTACATATATGTAAATTGGTGATAAAATGGCTGATGTAA"
+		}, {
+			"lengths": [30, 42],
+			"position": 287397,
+			"repeat": "GTTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "GCCGTTTAATTCTCTTACCGCCTCACACCCTCCCTTGCAATA"
+		}, {
+			"lengths": [30, 39],
+			"position": 287469,
+			"repeat": "GTTTCCATACCAAAACGGTCTGATTTTAAC",
+			"spacer": "AACTTCTATAGGAATAGTTATTTTACAGTATAATTCATC"
+		}, {
+			"lengths": [30, 39],
+			"position": 287538,
+			"repeat": "GTTTCCATACCGTAACGGTCTGATTTTAAC",
+			"spacer": "TTATAAAATGAAAATAAAAGGCAGTATTGGAATGATTGA"
+		}, {
+			"lengths": [30, 38],
+			"position": 287607,
+			"repeat": "GTTTCCATACCAAAACGGTCTGATTTTAAC",
+			"spacer": "TTGCATACATTGCTAAAAAATATCTGTAGGTGAAACTA"
+		}, {
+			"lengths": [30, 32],
+			"position": 287675,
+			"repeat": "GTTTCCATACCGTAACGGTCTGATTTTAAC",
+			"spacer": "TATCACTTGTTGGTTACCGTAAAACTAAATGA"
+		}, {
+			"lengths": [30, 47],
+			"position": 287737,
+			"repeat": "GTTTCCATACCGTAACGGTCTGATTTTAAC",
+			"spacer": "GATGCAATAACTTCATTAGCCCCACCTGTATTAAATACGGAGCATTT"
+		}, {
+			"lengths": [30, 36],
+			"position": 287814,
+			"repeat": "GTTTCCATACCGTAACGGTCTGATTTTAAC",
+			"spacer": "CAAATTCCCAACTAACACCGAAAACTATCTCCCTAT"
+		}, {
+			"lengths": [30, 36],
+			"position": 287880,
+			"repeat": "GTTTCCATACCGTAACGGTCTGATTTTAAC",
+			"spacer": "ATCCCTTTAGATTCTCAATTCTGTAGGCAGTTAGAA"
+		}, {
+			"lengths": [30, 40],
+			"position": 287946,
+			"repeat": "GTTTCCATACCGTAACGGTCTGATTTTAAC",
+			"spacer": "TTAATCTTAAAAGTGGTGGAATAGGAGCTGGTGGTGGGGC"
+		}, {
+			"lengths": [30, 36],
+			"position": 288016,
+			"repeat": "GTTTCCATACCGTAACGGTCTGATTTTAAC",
+			"spacer": "CATTAACTGATAATAATACAATTGATAGATTAAAAA"
+		}, {
+			"lengths": [30, 38],
+			"position": 288082,
+			"repeat": "GTTTCCATACCGTAACGGTCTGATTTTAAC",
+			"spacer": "AAAATAGATGAAAATACTTCAATTGTTATTGATTTATG"
+		}, {
+			"lengths": [30, 42],
+			"position": 288150,
+			"repeat": "GTTTCCATACCGTAACGGTCTGATTTTAAC",
+			"spacer": "TTTAAGTTTTGTTATTGTTTCGTAAATTTTAAATAATTCTTG"
+		}, {
+			"lengths": [30, 44],
+			"position": 288222,
+			"repeat": "GTTTCCATACCGTAACGGTCTGATTTTAAC",
+			"spacer": "AAGATTGACGAATATCAACACCTTCAGAAAAAAGAATATTTAGA"
+		}, {
+			"lengths": [30, 34],
+			"position": 288296,
+			"repeat": "GTTTCCATACCGTAACGGTCTGATTTTAAC",
+			"spacer": "TTTTGATGTTTCTGGAGTTTATTCACATAATTGT"
+		}, {
+			"lengths": [30, 42],
+			"position": 288360,
+			"repeat": "GTTTCCATACCGTAACGGTCTGATTTTAAC",
+			"spacer": "CAATGTAGAATTTGATATTACTAATATTTGGGATATATCTTA"
+		}, {
+			"lengths": [30, 38],
+			"position": 288432,
+			"repeat": "GTTTCCATACCGTAACGGTCTGATTTTAAC",
+			"spacer": "AATTTTAATGTATCTTTTACTGCTGGTGGCATATCCTT"
+		}, {
+			"position": 288500,
+			"repeat": "GTTTCCATACCGAAACGGTCTGATTTTAAC"
+		}],
+		"startRange": 287107
+	}, {
+		"avgRLength": 30,
+		"avgSLength": 40,
+		"consensusRepeat": "ATTTCCATACCGAAACGGTCTGATTTTAAC",
+		"endRange": 321364,
+		"isValid": true,
+		"noOfRepeats": 18,
+		"spacerRepeat": [{
+			"lengths": [30, 58],
+			"position": 320136,
+			"repeat": "ATTTTTAAACCGAAACGCTCTAATTCCATA",
+			"spacer": "GGGGGCTACACCCCCTATTGGGATACTCCCCTATTTTTGTTTTATTTATTAAAATTAT"
+		}, {
+			"lengths": [30, 36],
+			"position": 320224,
+			"repeat": "GTTTTTACACCGTAACGGTCTGATTTTAAC",
+			"spacer": "ATAATATATACTCTTAGCTTAAAAGTATATGATAAA"
+		}, {
+			"lengths": [30, 34],
+			"position": 320290,
+			"repeat": "GTTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "ATTCTAACTCATATCTTGGACTCTCAAAGTAGTA"
+		}, {
+			"lengths": [30, 35],
+			"position": 320354,
+			"repeat": "GTTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "AAAATTGTAATATTGCCTTCCTTTGATGCCCTAAA"
+		}, {
+			"lengths": [30, 43],
+			"position": 320419,
+			"repeat": "ATTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "TCATGAATTAGTTAAAGCATATCAAAGACATAAAGATTTCATG"
+		}, {
+			"lengths": [30, 47],
+			"position": 320492,
+			"repeat": "ATTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "TATAAGTTTGTTCAATAATACTATACCAACGCTCTAACTGCTCCCTA"
+		}, {
+			"lengths": [30, 46],
+			"position": 320569,
+			"repeat": "ATTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "GAGTATAGAAATAAAATCTGGGGTTATTGTTACAAAAAAATTAAGA"
+		}, {
+			"lengths": [30, 42],
+			"position": 320645,
+			"repeat": "ATTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "CAAATTCTATTTCAAATTCATAAGTGTCTCCAGACAAATCAA"
+		}, {
+			"lengths": [30, 37],
+			"position": 320717,
+			"repeat": "ATTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "AAAACATTCATTATATAACAAAAGCATTAATTTCTGA"
+		}, {
+			"lengths": [30, 36],
+			"position": 320784,
+			"repeat": "ATTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "TTTCATTGTAGTATCAAATAAATCATTATTACCTGC"
+		}, {
+			"lengths": [30, 36],
+			"position": 320850,
+			"repeat": "ATTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "ATTATATATATCATTATTATATGAACAAATGAATGT"
+		}, {
+			"lengths": [30, 42],
+			"position": 320916,
+			"repeat": "ATTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "TATGTGGAGAAAGACTTGTTGGAGAGGATATTTATGAAATAG"
+		}, {
+			"lengths": [30, 42],
+			"position": 320988,
+			"repeat": "ATTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "AATTCAACATTTCTTGTTTTAATGTATCATCAATAGTATCAA"
+		}, {
+			"lengths": [30, 43],
+			"position": 321060,
+			"repeat": "ATTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "TTCTGTGCATATCAATGAGAATACTTGGGTTAGTCTCCATGTC"
+		}, {
+			"lengths": [30, 37],
+			"position": 321133,
+			"repeat": "ATTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "CTAAATCACCAAAGTTATATAGTGCTTTTATATCAAT"
+		}, {
+			"lengths": [30, 39],
+			"position": 321200,
+			"repeat": "ATTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "TGCACCGTCAAGTTTTTCTTCAATATAAACTTTATCATC"
+		}, {
+			"lengths": [30, 36],
+			"position": 321269,
+			"repeat": "ATTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "AAAATATGCACCTAAAAAGCAAAAAGTGAAAAAGTT"
+		}, {
+			"position": 321335,
+			"repeat": "ATTTCCATACCGAAACGGTCTGATTTTAAC"
+		}],
+		"startRange": 320136
+	}, {
+		"avgRLength": 31,
+		"avgSLength": 41,
+		"consensusRepeat": "TGTTTCCATACCGAAACGGTCTGATTTTAAC",
+		"endRange": 433077,
+		"isValid": true,
+		"noOfRepeats": 8,
+		"spacerRepeat": [{
+			"lengths": [31, 48],
+			"position": 432543,
+			"repeat": "TGTTCCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "AAGTGGTATTAAGACACGGTGATTTAGACGCTCACATTGATATAACTT"
+		}, {
+			"lengths": [31, 59],
+			"position": 432622,
+			"repeat": "TGTTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "GATGAGGTTTTGGATGAAAGCTCCACAGAGGAAAGATTTGATGAGGATGAGGAAGAAGA"
+		}, {
+			"lengths": [31, 39],
+			"position": 432712,
+			"repeat": "CGTTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "GATGAAATAAACATTATAAACGCAGTTTCAGTTGATGCA"
+		}, {
+			"lengths": [31, 33],
+			"position": 432782,
+			"repeat": "AGTTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "AGAATTATACGTCCCTTCTGAATTTACAACATT"
+		}, {
+			"lengths": [31, 39],
+			"position": 432846,
+			"repeat": "TGTTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "GGTAAGCGTGGATTTTCTCAAGTAATTCTGGTGTCATCT"
+		}, {
+			"lengths": [31, 36],
+			"position": 432916,
+			"repeat": "TGTTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "ATGGATAATACCACAATTAAAACAAATACATCAACA"
+		}, {
+			"lengths": [31, 33],
+			"position": 432983,
+			"repeat": "TGTTTCCATACCGAAACGGTCTGATTTTAAC",
+			"spacer": "CTGTTTTGCCATTTAAACTATTATCATTAATAT"
+		}, {
+			"position": 433047,
+			"repeat": "TGTTTCCATACCGAAACGGTCTGATTTTAAC"
+		}],
+		"startRange": 432543
+	}, {
+		"avgRLength": 30,
+		"avgSLength": 38,
+		"consensusRepeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+		"endRange": 770276,
+		"isValid": true,
+		"noOfRepeats": 15,
+		"spacerRepeat": [{
+			"lengths": [30, 42],
+			"position": 769284,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "TGCATAAAATTTAGCTTGTTCTAAATAATCTAATTCGTTAAA"
+		}, {
+			"lengths": [30, 36],
+			"position": 769356,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "ATCGGTTAGGTAGGTTGTGGTAGGTAGTAACCGAAA"
+		}, {
+			"lengths": [30, 36],
+			"position": 769422,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "AATGATATCAACGTATTAATTCAAGAAACAAATAGG"
+		}, {
+			"lengths": [30, 36],
+			"position": 769488,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "AAGGATGAGATTGAAGAAACTGATGAAATGAAACCG"
+		}, {
+			"lengths": [30, 46],
+			"position": 769554,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "TATTAGAAAATAACACAATAGTTGACTGGAAAACTTCTAAATATTC"
+		}, {
+			"lengths": [30, 32],
+			"position": 769630,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "AATGATCCAAATTTGGTTATTGGAAGATTAGC"
+		}, {
+			"lengths": [30, 32],
+			"position": 769692,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "GCCACTATCGGTTGGATATTTTTTGTATTTGT"
+		}, {
+			"lengths": [30, 48],
+			"position": 769754,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "CATTTTGATTTTACTTCAATTGATTTTACAATTTTACATTTATCTATA"
+		}, {
+			"lengths": [30, 41],
+			"position": 769832,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "AATTTGTCATTATCAATCATAGTAAAAATATTTTTATAATA"
+		}, {
+			"lengths": [30, 37],
+			"position": 769903,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "GCGGGTGCGTTTTCCACAGTTGCAAAGAAAAAAGTAA"
+		}, {
+			"lengths": [30, 42],
+			"position": 769970,
+			"repeat": "GTTAAAATCAGACCGTTACGGTATGGAAAC",
+			"spacer": "ACACTACTGAACATATTTTGTAATCCTGTTAAATATCCCGCA"
+		}, {
+			"lengths": [30, 41],
+			"position": 770042,
+			"repeat": "GTTAAAATCAGACCGTTACGGTATGGAAAC",
+			"spacer": "TACTCTCTCACCTCACTTGTTTTTTTTAAGATTATGTTTTA"
+		}, {
+			"lengths": [30, 38],
+			"position": 770113,
+			"repeat": "GTTAAAATCAGACCGTTACGGTATGGAAAC",
+			"spacer": "GATTGGGTGCTTATTTTAGTTGTAGTTATTTTAGTTGT"
+		}, {
+			"lengths": [30, 36],
+			"position": 770181,
+			"repeat": "GTTAAAATCAGACCGTTACGGTATGGAAAC",
+			"spacer": "AAAAAGTTATAATGTTTGGATAAAGGTGGAAAAATG"
+		}, {
+			"position": 770247,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTGTAAAAAC"
+		}],
+		"startRange": 769284
+	}, {
+		"avgRLength": 30,
+		"avgSLength": 38,
+		"consensusRepeat": "GTTAAAATCAGACCGATTCGGTATGGAAAC",
+		"endRange": 784580,
+		"isValid": true,
+		"noOfRepeats": 8,
+		"spacerRepeat": [{
+			"lengths": [30, 41],
+			"position": 784070,
+			"repeat": "GTTAAAATCAGACCGATTCGGTATGGAAAC",
+			"spacer": "AAAATTAAAATGCCAAAAGTTGCAACACAATTAGCAAAAGA"
+		}, {
+			"lengths": [30, 36],
+			"position": 784141,
+			"repeat": "GTTAAAATCAGACCGATTCGGTATGGAAAC",
+			"spacer": "GATATTAATTTATCACTTCCAGACATCTTTAAGAAA"
+		}, {
+			"lengths": [30, 36],
+			"position": 784207,
+			"repeat": "GTTAAAATCAGACCGATTCGGTATGGAAAC",
+			"spacer": "AAAAATCAAAGACATCGAATACAAAATTAATCTCAT"
+		}, {
+			"lengths": [30, 37],
+			"position": 784273,
+			"repeat": "GTTAAAATCAGACCGATTCGGTATGGAAAC",
+			"spacer": "GAATAATAATCCTTATCAAAAATGTATATCCCTCTTA"
+		}, {
+			"lengths": [30, 43],
+			"position": 784340,
+			"repeat": "GTTAAAATCAGACCGATTCGGTATGGAAAC",
+			"spacer": "CATTATCAACCTTTATAACTGCAAAAAGTAATTTTTGTTTATG"
+		}, {
+			"lengths": [30, 37],
+			"position": 784413,
+			"repeat": "GTTAAAATCAGACCGATTCGGTATGGAAAC",
+			"spacer": "ATTTTTTTAATTTTTGTCTCGTTTAGTATTTTTTGGA"
+		}, {
+			"lengths": [30, 41],
+			"position": 784480,
+			"repeat": "GTTAAAATCAGACCGAATCGGTATGGAAAC",
+			"spacer": "TACAACTCCCTTAATAATTTTTGTTTCTTTTTTAAGAGATA"
+		}, {
+			"position": 784551,
+			"repeat": "GTTAAAATCAGACCTCTTAGAGGATGAAAA"
+		}],
+		"startRange": 784070
+	}, {
+		"avgRLength": 30,
+		"avgSLength": 39,
+		"consensusRepeat": "GTTAAAATCAGACCGTTACGGTATGGAAAC",
+		"endRange": 974826,
+		"isValid": true,
+		"noOfRepeats": 8,
+		"spacerRepeat": [{
+			"lengths": [30, 42],
+			"position": 974312,
+			"repeat": "GTTAAAATCAGACCGTTACGGTATGGAAAC",
+			"spacer": "TTCAGCACCGCACCAACAACAAGAAATAACTACAAAAAAATC"
+		}, {
+			"lengths": [30, 42],
+			"position": 974384,
+			"repeat": "GTTAAAATCAGACCGTTACGGTATGGAAAC",
+			"spacer": "CTCGTTAACGTTCCATTTCCTATTATTGGTGTAAAAAGTGCT"
+		}, {
+			"lengths": [30, 36],
+			"position": 974456,
+			"repeat": "GTTAAAATCAGACCGTTACGGTATGGAAAC",
+			"spacer": "AAAGTTACAGCAATTGAGACCAATGTTTCAGCAAAT"
+		}, {
+			"lengths": [30, 37],
+			"position": 974522,
+			"repeat": "GTTAAAATCAGACCGTTACGGTATGGAAAC",
+			"spacer": "GAATATGAGAATATTGAAATAAAAAAACCTGTGCTTT"
+		}, {
+			"lengths": [30, 40],
+			"position": 974589,
+			"repeat": "GTTAAAATCAGACCGTTACGGTATGGAAAC",
+			"spacer": "AATGTACTCGCAACATCTGCGCCGTCTATGTATGTGAGTA"
+		}, {
+			"lengths": [30, 36],
+			"position": 974659,
+			"repeat": "GTTAAAATCAGACCGTTACGGTATGGAAAC",
+			"spacer": "TTCGGCAGGGATATAATAATATAATATACACATTGC"
+		}, {
+			"lengths": [30, 42],
+			"position": 974725,
+			"repeat": "GTTAAAATCAGACCGTTACGGTATGGAAAC",
+			"spacer": "GCCCCTATTGGGTGATACTGTGGGTCAGCAAATAGCCGTATA"
+		}, {
+			"position": 974797,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC"
+		}],
+		"startRange": 974312
+	}, {
+		"avgRLength": 30,
+		"avgSLength": 40,
+		"consensusRepeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+		"endRange": 1440582,
+		"isValid": true,
+		"noOfRepeats": 17,
+		"spacerRepeat": [{
+			"lengths": [30, 42],
+			"position": 1439422,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "CTAAATATATAATTTTACTTCTTGGTGATATTTCTTGTTAAA"
+		}, {
+			"lengths": [30, 40],
+			"position": 1439494,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "ACTTCATATATGACATCTTTATCTATACAACCGCATAAAA"
+		}, {
+			"lengths": [30, 45],
+			"position": 1439564,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "TCTTTTACTCCCTTCAAAACATCCTCTAAAGTTATCTCTACCATA"
+		}, {
+			"lengths": [30, 35],
+			"position": 1439639,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "TTTGGGATTGTGGCAACACATTAAACATTGTTGGT"
+		}, {
+			"lengths": [30, 40],
+			"position": 1439704,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "CATTATCTACATACCATAAATTTTTAACCACAGCCTCACC"
+		}, {
+			"lengths": [30, 35],
+			"position": 1439774,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "TTAACAAAGTTCCATCCTTTCATACCAACTTCTGG"
+		}, {
+			"lengths": [30, 49],
+			"position": 1439839,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "AATAAATATAAAAGGAGCTCCAAACCCTTCCCCTAATCTATGAAACCTT"
+		}, {
+			"lengths": [30, 37],
+			"position": 1439918,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "TTCTCAATGAATTCTTTTTCCATAAATTCTTTTAATT"
+		}, {
+			"lengths": [30, 37],
+			"position": 1439985,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "ATCAAACATGTTCTTAACAATTTTCTTTGCTTTGTCT"
+		}, {
+			"lengths": [30, 43],
+			"position": 1440052,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "TCTATTGTTCCTCCAGTAATTATCTGGGGAAAGTCTGGGTATG"
+		}, {
+			"lengths": [30, 43],
+			"position": 1440125,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "ACTTATTGGGTTAGGGAGAGCCCGTGACTTTCCAAAACCTAAC"
+		}, {
+			"lengths": [30, 51],
+			"position": 1440198,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "TCTTCTTCTGCTACTTAGCCATGCCCTATATGCTCTCATACTTCTAAAGTG"
+		}, {
+			"lengths": [30, 41],
+			"position": 1440279,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "TTTTTATCTAAGAATTGACAAAACTTTTCATAAAGCTCGTT"
+		}, {
+			"lengths": [30, 36],
+			"position": 1440350,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "ACTAATAACGTTGATACACTAAATTTAATAGTAGGA"
+		}, {
+			"lengths": [30, 40],
+			"position": 1440416,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "GCCAATAGAAGAGTGGAATTACATCGTTAGATTTATCAAA"
+		}, {
+			"lengths": [30, 37],
+			"position": 1440486,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "GAGAAAAGAGAATGTGTTTGATGTTAAAATAATATTC"
+		}, {
+			"position": 1440553,
+			"repeat": "GTTAAAATCAGACCGTTACGGTATGGAAAC"
+		}],
+		"startRange": 1439422
+	}, {
+		"avgRLength": 30,
+		"avgSLength": 36,
+		"consensusRepeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+		"endRange": 1465475,
+		"isValid": true,
+		"noOfRepeats": 12,
+		"spacerRepeat": [{
+			"lengths": [30, 36],
+			"position": 1464714,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "TTTAGTTGATTTGTTTGATTTTGGCTTTGCTGTTTT"
+		}, {
+			"lengths": [30, 38],
+			"position": 1464780,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "AAATAGATGTCCTAACGATGTGGAAAGGTGTCAATTTT"
+		}, {
+			"lengths": [30, 36],
+			"position": 1464848,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "AATCTACGTATCTTCTTATATATATACACAACCAAC"
+		}, {
+			"lengths": [30, 35],
+			"position": 1464914,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "CCCCCACAAGCCCTTTGAAATTATCATTTAATTTG"
+		}, {
+			"lengths": [30, 35],
+			"position": 1464979,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "CTTGTCCTTGTCCCGTAGTAGTGTCTTTTATGTGT"
+		}, {
+			"lengths": [30, 35],
+			"position": 1465044,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "TCTTTTTAATCTTCTCTAAGTCAATCATAAAAACC"
+		}, {
+			"lengths": [30, 35],
+			"position": 1465109,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "TCTTTTTAATCTTCTCTAAGTCAATCATAAAAACC"
+		}, {
+			"lengths": [30, 44],
+			"position": 1465174,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "AGCTACTGATTATTTTCACTGCTGTTGTTATCATCCCCATCATT"
+		}, {
+			"lengths": [30, 36],
+			"position": 1465248,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "GCTTTTACCCTCCCCCGACGGCCCCGTGATTGCGAG"
+		}, {
+			"lengths": [30, 35],
+			"position": 1465314,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "AATTTTAGCTATTTGATTAACTGAATCCCATTCTT"
+		}, {
+			"lengths": [30, 37],
+			"position": 1465379,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTATGGAAAC",
+			"spacer": "ATAACAATCTTTATCCACGAACAAAAATAATTTATCT"
+		}, {
+			"position": 1465446,
+			"repeat": "GTTAAAATCAGACCGTTTCGGTTTTAAACT"
+		}],
+		"startRange": 1464714
+	}, {
+		"avgRLength": 24,
+		"avgSLength": 46,
+		"endRange": 1466845,
+		"isValid": false,
+		"noOfRepeats": 4,
+		"spacerRepeat": [{
+			"lengths": [24, 48],
+			"position": 1466612,
+			"repeat": "ATGCCCTGTTAAAATCAGACCGTT",
+			"spacer": "ACGGTATGGAAACTACGCCCAGTTAAGTGCTATAATTTATGGACTATT"
+		}, {
+			"lengths": [24, 42],
+			"position": 1466684,
+			"repeat": "AATAGTTGTTAAAATCAGACCGTT",
+			"spacer": "ACGGTATGGAAACCCTAATTTTTTTATTATGTATCTTAATTC"
+		}, {
+			"lengths": [24, 48],
+			"position": 1466750,
+			"repeat": "ATTATGAGTTAAAATCAGACCGTT",
+			"spacer": "TCGGTATGGAAACGTGTTTTATGAGTTCTTCTGGTGTGAATGCTGGTG"
+		}, {
+			"position": 1466822,
+			"repeat": "GTTTGTTGTTAAAATCAGACCGTT"
+		}],
+		"startRange": 1466612
+	}, {
+		"avgRLength": 30,
+		"avgSLength": 42,
+		"consensusRepeat": "GTTTCCATTCCGAATCGGTCTGATTTTAAC",
+		"endRange": 1522397,
+		"isValid": true,
+		"noOfRepeats": 5,
+		"spacerRepeat": [{
+			"lengths": [30, 43],
+			"position": 1522079,
+			"repeat": "ATTTCATCATTTGAGAGGTCTGATTTTAAC",
+			"spacer": "CAATTTGTAAGAAAAAAGTTCCAGCCCAGTAGTTTATGACATC"
+		}, {
+			"lengths": [30, 44],
+			"position": 1522152,
+			"repeat": "GTTTCCATTCCGAATCGGTCTGATTTTAAC",
+			"spacer": "AAGTAGAATTAATAAAGTCGCATATGACAAAAGCAGATAAAGAA"
+		}, {
+			"lengths": [30, 45],
+			"position": 1522226,
+			"repeat": "GTTTCCATTCCGAATCGGTCTGATTTTAAC",
+			"spacer": "CTCTTCCATTCAAGTCCCTCCTTTGAAAATGTATGCGCCTTATAA"
+		}, {
+			"lengths": [30, 37],
+			"position": 1522301,
+			"repeat": "GTTTCCATTCCGAATCGGTCTGATTTTAAC",
+			"spacer": "AAGCAAACTTAGAAGACCCCGATATTATAGAGTTGTT"
+		}, {
+			"position": 1522368,
+			"repeat": "GTTTCCATTCCGAATCGGTCTGATTTTAAC"
+		}],
+		"startRange": 1522079
+	}],
+	"noOfBases": 1607556,
+	"noOfCRISPRs": 12,
+	"organism": "CP009149.1 Methanocaldococcus bathoardescens strain JH146, complete genome",
+	"timeTaken": 667.6251327991486,
+	"validCrisprs": 11
+}
