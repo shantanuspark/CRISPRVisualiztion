@@ -32,6 +32,7 @@ def upload_file():
       return 'File Upload Error', 400
    with open(filename,"r") as f:
       data = json.load(f)
+      data['file_name'] = filename.split('.')[0]
    return jsonify(data)
 
 

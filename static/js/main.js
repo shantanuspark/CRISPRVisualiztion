@@ -21,6 +21,7 @@ $(document).ready(function () {
             success: function (data) {
                 $('.progress-bar').html('Creating Visualization');
                 $('.progress-bar').css('width', '90%');
+                fileID = data['file_name']
                 displayResult(data);
             },
             error: function (data) {
