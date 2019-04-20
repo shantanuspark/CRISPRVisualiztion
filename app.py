@@ -11,18 +11,26 @@ from Bio.Seq import Seq
 from Bio import motifs,SeqIO
 from dna_features_viewer import GraphicFeature, GraphicRecord, CircularGraphicRecord
 
-
 app = Flask(__name__)
 
+'''
+Function to create a random file name
+'''
 def randomDigits(digits):
     lower = 10**(digits-1)
     upper = 10**digits - 1
     return random.randint(lower, upper)
 
+'''
+GET service to serve the index page
+'''
 @app.route('/')
 def render_index():
    return render_template('index.html')
 	
+'''
+POST service to upload the json file to the uploaded sequences folder
+'''
 @app.route('/uploader', methods = ['POST'])
 def upload_file():
    try:
@@ -35,7 +43,9 @@ def upload_file():
       data['file_name'] = filename.split('.')[0]
    return jsonify(data)
 
-
+'''
+POST function to create web sequnce logo using Biopython
+'''
 @app.route('/generate_image/<file_name>', methods = ['POST'])
 def create_webLogo(file_name):
     repeats = request.get_json()
@@ -43,6 +53,9 @@ def create_webLogo(file_name):
     m.weblogo('static/logos/'+str(file_name)+'.png')
     return jsonify('{"success":1}')
 
+'''
+POST function to create the CRISPR structure using the dna_feature_viewer package
+'''
 @app.route('/generate_dna_struct/<file_name>', methods = ['POST'])
 def create_dna_structure(file_name):
    results = request.get_json()
@@ -61,7 +74,10 @@ def create_dna_structure(file_name):
    ax, _ = record.plot(figure_width=10)
    ax.figure.savefig('static/logos/'+str(file_name)+'.png', bbox_inches='tight')
    return jsonify('{"success":1}')
-		
+
+'''
+POST function to create the 2D structure using the RNAStructure package
+'''		
 @app.route('/generate_structure/<file_name>', methods = ['POST'])
 def create_2dStructure(file_name):
    sequence = request.get_json()

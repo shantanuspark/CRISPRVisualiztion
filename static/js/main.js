@@ -12,8 +12,8 @@ $(document).ready(function () {
 
         // Upload sequence file
         var fd = new FormData($("#fileinfo")[0]);
-        // filename = $("#fileinfo");
         
+        // Ajax call to upload file and display the visualization
         $.ajax({
             url: '/uploader',
             type: 'POST',
@@ -62,6 +62,8 @@ $(document).ready(function () {
             crisprData[id]['spacerRepeat'].forEach(function(value){
                 repeats.push(value['repeat']);
             });
+
+            // Generate the web logo from the list of repeat sequences
             $.ajax({
                 url: '/generate_image/' + fileID,
                 type: 'POST',
@@ -83,6 +85,7 @@ $(document).ready(function () {
         case("Sequence Structure"):
             var crSeq = button.data('ciripr-seq') // Extract info from data-* attributes
             var rand = Math.floor(Math.random() * 1000);
+            // Generate the 2D structure of the spacer/repeat sequence
             $.ajax({
                 url: '/generate_structure/' + fileID+'_'+rand,
                 type: 'POST',
@@ -90,6 +93,7 @@ $(document).ready(function () {
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
                 success: function (d) {
+                    // Display the 2D structure and the button to blast the structure on NCBI
                     modal.find('#modal-content').html(`
                     <div class="text-center">
                     <img src="static/logos/`+fileID+`_`+rand+`.svg" type="image/svg+xml" />
@@ -109,6 +113,7 @@ $(document).ready(function () {
             requestJson['spacerRepeats'] = crisprData[id]['spacerRepeat'];
             requestJson['length'] = button.data('crispr-length')
             var rand = Math.floor(Math.random() * 1000);
+            // Function to create the CSRISPR structure image
             $.ajax({
                 url: '/generate_dna_struct/' + fileID+'_'+rand,
                 type: 'POST',
@@ -133,6 +138,7 @@ $(document).ready(function () {
 
 });
 
+// Displays an error message in an alert box
 function displayError(msg) {
     $('#results').html(`
     <div class="alert alert-danger" role="alert">
@@ -144,6 +150,7 @@ function displayError(msg) {
     $('.progress').hide();
 }
 
+// Displays the final visualization using the data from the json file
 function displayResult(data) {
     $("#findBtn").removeClass('disabled');
     $("#fasta-sequence").val("");
@@ -151,6 +158,7 @@ function displayResult(data) {
     $('#results').html(createResults(data));
 }
 
+// Creates the visualizations using multiple components from Bootstrap
 function createResults(data) {
     content = `
     <div class="alert alert-light" role="alert">
@@ -161,7 +169,6 @@ function createResults(data) {
     <span class="badge badge-pill badge-secondary"> No. of Bases: ` + data['noOfBases'] + `</span>
     <span class="badge badge-pill badge-light">No. of valid CRISPRs: `+ data['validCrisprs'] + `</span>
     <span class="badge badge-pill badge-secondary">No. of questionable CRISPRs: `+ (data['noOfCRISPRs'] - data['validCrisprs']) + `</span>
-    <span class="badge badge-pill badge-light">Time taken to find CRISPRs: `+ Math.floor(data['timeTaken']) + `ms</span>
     </p>
     </div>
     <div id="accordion">`
@@ -174,6 +181,7 @@ function createResults(data) {
     return content;
 }
 
+// Creates tables for each of the CRISPR arrays
 function getTables(isValid, data) {
     table_content = `
     <div class="card">
