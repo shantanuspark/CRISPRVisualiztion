@@ -1,5 +1,5 @@
 # CRISPRVisualiztion
-CRISPRVisualiztion is an easy, highly interactive and intuitive way to visualize CRISPR arrays on a web page. It can be incorporated in any of the CRISPR tools, were CRISPR array visualization is requried.
+CRISPRVisualiztion is an easy, highly interactive and intuitive way to visualize CRISPR arrays on a web page. It can be incorporated in any of the CRISPR tools, where CRISPR array visualization is requried.
 
 Steps to setup CRISPRVisualiztion:
 1. Install RNAStructure from http://rna.urmc.rochester.edu/RNAstructureDownload.html
