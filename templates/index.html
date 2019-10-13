@@ -15,9 +15,18 @@
 
 <body>
     <nav class="navbar navbar-dark bg-dark">
+
         <div class="container">
-            <a class="navbar-brand" href="#"> CRISPR Array Visualization </a>
+            <a class="navbar-brand" href="http://crisprlstm.westus.cloudapp.azure.com:8001/"> CRISPR Array Visualization </a>
+            <span>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">CRISPRLstm Search <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </span>
         </div>
+
     </nav>
     <br />
     <div class="container">
@@ -29,8 +38,7 @@
                         <div class="row justify-content-center">
                         <div class="input-group mb-3 col-10">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="inputGroupFileAddon01">Upload a CRISPR Array in
-                                    json format</span>
+                                <span class="input-group-text" id="inputGroupFileAddon01">Upload CRISPR json</span>
                             </div>
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input" name="seqfile" id="inputGroupFile01"
@@ -39,8 +47,37 @@
                             </div>
                         </div>
                         <div class="col-2">
-                            <a class="btn btn-secondary " id="findBtn" href="#" role="button">Visualize</a>
+                            <a class="btn btn-secondary " id="findBtn" onClick="btnClick('upload',this)" href="#" role="button">Visualize</a>
                         </div>
+                        </div>
+                        <hr />
+                        <div class="row justify-content-center">
+                                <div class="col-3">
+                        <div class="dropdown">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Download example JSON
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" id="example_sp" target="_blank" href="static/sequences/sp.json"><i>Sp. Pyogenese</i>  M1 GAS</a>
+                                    <a class="dropdown-item" id="example_cb" target="_blank" href="static/sequences/cdc.json"><i>C. botulinum </i>CDC 297</a>
+                                    <a class="dropdown-item" id="example_mb" target="_blank" href="static/sequences/jh.json"><i> M. bathoardescens</i> strain JH146</a>
+                                </div>
+                            </div>
+                                </div>
+                                <div class="col-3">
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Visualize example Sequences
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" id="example_sp" onClick="btnClick('sp',this)" ><i>Sp. Pyogenese</i>  M1 GAS</a>
+                                <a class="dropdown-item" id="example_cb" onClick="btnClick('cdc',this)" ><i>C. botulinum </i>CDC 297</a>
+                                <a class="dropdown-item" id="example_mb" onClick="btnClick('jh',this)" ><i> M. bathoardescens</i> strain JH146</a>
+                            </div>
+                        </div>
+                    </div>
                         </div>
                     </form>
 

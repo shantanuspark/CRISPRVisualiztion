@@ -1,18 +1,20 @@
 var crisprData;
 var fileID;
-$(document).ready(function () {
-    $('.progress').hide();
-    $("#findBtn").click(function () {
-        //Clear result section and show progress bar
-        $('#findBtn').addClass('disabled');
-        $('#results').html("");
-        $('.progress-bar').css('width', '50%');
-        $('.progress-bar').html('Getting the json data');
-        $('.progress').show();
 
+$('.progress').hide();
+
+var btnClick = function (value, object) {
+    //Clear result section and show progress bar
+    $('#findBtn').addClass('disabled');
+    $('#results').html("");
+    $('.progress-bar').css('width', '50%');
+    $('.progress-bar').html('Getting the json data');
+    $('.progress').show();
+
+    if(value=='upload') {
         // Upload sequence file
         var fd = new FormData($("#fileinfo")[0]);
-        
+
         // Ajax call to upload file and display the visualization
         $.ajax({
             url: '/uploader',
@@ -31,35 +33,42 @@ $(document).ready(function () {
             contentType: false,
             processData: false
         });
+    } else {
+        // Show example sequences
+        fileID = value;
+        $.getJSON( "static/sequences/"+fileID+".json", function( data ) { 
+            displayResult(data);
+        });
+    }
 
-    });
+};
 
 
-    $('#inputGroupFile01').on('change', function () {
-        //get the file name
-        var fileName = $(this).val();
-        //replace the "Choose a file" label
-        $(this).next('.custom-file-label').html(fileName);
-    })
+$('#inputGroupFile01').on('change', function () {
+    //get the file name
+    var fileName = $(this).val();
+    //replace the "Choose a file" label
+    $(this).next('.custom-file-label').html(fileName);
+})
 
-    $('#exampleModal').on('show.bs.modal', function (event) {
-        var button = $(event.relatedTarget) // Button that triggered the modal
+$('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget) // Button that triggered the modal
 
-        $('#modal-content').html(`
+    $('#modal-content').html(`
         <div class="text-center">
             <div class="spinner-border" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
         `);
-        
-        var modal = $(this)
 
-        switch(button.data('modal-type')){
-        case("Repeat Weblogo"):
+    var modal = $(this)
+
+    switch (button.data('modal-type')) {
+        case ("Repeat Weblogo"):
             var id = button.data('ciripr-id') // Extract info from data-* attributes
             var repeats = []
-            crisprData[id]['spacerRepeat'].forEach(function(value){
+            crisprData[id]['spacerRepeat'].forEach(function (value) {
                 repeats.push(value['repeat']);
             });
 
@@ -73,40 +82,40 @@ $(document).ready(function () {
                 success: function (d) {
                     modal.find('#modal-content').html(`
                     <div class="text-center">
-                        <img src="static/logos/`+fileID+`.png" class="img-fluid" />
+                        <img src="static/logos/`+ fileID + `.png" class="img-fluid" />
                     </div>
                     `);
                 },
-                failure: function (d){
+                failure: function (d) {
                     console.log('error')
                 }
             });
             break;
-        case("Sequence Structure"):
+        case ("Sequence Structure"):
             var crSeq = button.data('ciripr-seq') // Extract info from data-* attributes
             var rand = Math.floor(Math.random() * 1000);
             // Generate the 2D structure of the spacer/repeat sequence
             $.ajax({
-                url: '/generate_structure/' + fileID+'_'+rand,
+                url: '/generate_structure/' + fileID + '_' + rand,
                 type: 'POST',
-                data: JSON.stringify({"seq":crSeq}),
+                data: JSON.stringify({ "seq": crSeq }),
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
                 success: function (d) {
                     // Display the 2D structure and the button to blast the structure on NCBI
                     modal.find('#modal-content').html(`
                     <div class="text-center">
-                    <img src="static/logos/`+fileID+`_`+rand+`.svg" type="image/svg+xml" />
-                    <a target="_blank" href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Put&QUERY=`+crSeq+`&PROGRAM=blastn&FORMAT_TYPE=html&DATABASE=nr" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Blast on NCBI</a>
+                    <img src="static/logos/`+ fileID + `_` + rand + `.svg" type="image/svg+xml" />
+                    <a target="_blank" href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Put&QUERY=`+ crSeq + `&PROGRAM=blastn&FORMAT_TYPE=html&DATABASE=nr" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Blast on NCBI</a>
                     </div>                    
                     `);
                 },
-                failure: function (d){
+                failure: function (d) {
                     console.log('error')
                 }
-            }); 
+            });
             break;
-        case("CRISPR Structure"):
+        case ("CRISPR Structure"):
             var id = button.data('ciripr-id') // Extract info from data-* attributes
             var repeats = []
             requestJson = {}
@@ -115,7 +124,7 @@ $(document).ready(function () {
             var rand = Math.floor(Math.random() * 1000);
             // Function to create the CSRISPR structure image
             $.ajax({
-                url: '/generate_dna_struct/' + fileID+'_'+rand,
+                url: '/generate_dna_struct/' + fileID + '_' + rand,
                 type: 'POST',
                 data: JSON.stringify(requestJson),
                 contentType: "application/json; charset=utf-8",
@@ -123,20 +132,19 @@ $(document).ready(function () {
                 success: function (d) {
                     modal.find('#modal-content').html(`
                     <div class="text-center">
-                        <img src="static/logos/`+fileID+`_`+rand+`.png" class="img-fluid" />
+                        <img src="static/logos/`+ fileID + `_` + rand + `.png" class="img-fluid" />
                     </div>
                     `);
                 },
-                failure: function (d){
+                failure: function (d) {
                     console.log('error')
                 }
             });
-        break;
-        }
-        modal.find('.modal-title').text(button.data('modal-type'))
-    })
+            break;
+    }
+    modal.find('.modal-title').text(button.data('modal-type'))
+})
 
-});
 
 // Displays an error message in an alert box
 function displayError(msg) {
@@ -167,14 +175,14 @@ function createResults(data) {
         `<hr>
     <p class="mb-0">
     <span class="badge badge-pill badge-secondary"> No. of Bases: ` + data['noOfBases'] + `</span>
-    <span class="badge badge-pill badge-light">No. of valid CRISPRs: `+ data['validCrisprs'] + `</span>
+    <span class="badge badge-pill badge-light">No. of confirmed CRISPRs: `+ data['validCrisprs'] + `</span>
     <span class="badge badge-pill badge-secondary">No. of questionable CRISPRs: `+ (data['noOfCRISPRs'] - data['validCrisprs']) + `</span>
     </p>
     </div>
     <div id="accordion">`
     content += getTables(true, data);
-    content+=`<br/>`
-    content+=getTables(false, data);
+    content += `<br/>`
+    content += getTables(false, data);
 
     content += `</div></div></div>`
 
@@ -186,18 +194,18 @@ function getTables(isValid, data) {
     table_content = `
     <div class="card">
     <div class="card-header" id="headingTwo">
-    <h5 class="mb-0"> `+ ((isValid)?(`<button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+    <h5 class="mb-0"> `+ ((isValid) ? (`<button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
     aria-controls="collapseOne">
-    Valid CRISPRs <span class="badge badge-dark">` +data['validCrisprs']+ `</span>
-</button>`):(`
+    Confirmed CRISPRs <span class="badge badge-dark">` + data['validCrisprs'] + `</span>
+</button>`) : (`
     <button class="btn collapsed" data-toggle="collapse" data-target="#collapseTwo"
                                 aria-expanded="false" aria-controls="collapseTwo">
         Questionable CRISPRs <span class="badge badge-dark"> `+ (data['noOfCRISPRs'] - data['validCrisprs']) + ` </span>
-    </button>` ))+`
+    </button>` )) + `
     </h5>
-    </div>`+(isValid?`<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">`:
-    `<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">` )
-    +`<div class="card-body">
+    </div>`+ (isValid ? `<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">` :
+            `<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">`)
+        + `<div class="card-body">
     <table class="table table-hover">
     <thead>
     <tr>
@@ -213,7 +221,7 @@ function getTables(isValid, data) {
             table_content += `
         <tr class='resultRow'>
         <a href='#`+ i + `'>
-        <th scope="row"><a class="text-secondary" href='#`+ i + `'>CRISPR_`+ (i + 1) + `</a></th>
+        <th scope="row"><a class="text-secondary" href='#`+ i + `'>CRISPR_` + (i + 1) + `</a></th>
         <td>`+ value['startRange'] + `</td>
         <td>`+ value['endRange'] + `</td>
         <td>`+ value['avgRLength'] + `</td>
@@ -259,19 +267,19 @@ function getTables(isValid, data) {
             value['spacerRepeat'].forEach(function (value, i) {
                 if (value['spacer']) {
                     table_content += `<tr>
-                            <td scope="row"><button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModal" data-ciripr-seq="`+value['repeat'].trim()+`
-                            " data-modal-type="Sequence Structure" data-file-name=`+fileID+`>`+ value['repeat'] + `</button></td>
+                            <td scope="row"><button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModal" data-ciripr-seq="`+ value['repeat'].trim() + `
+                            " data-modal-type="Sequence Structure" data-file-name=`+ fileID + `>` + value['repeat'] + `</button></td>
                             <td>`+ value['position'] + `</td>
                             <td>`+ value['lengths'][0] + `</td>
-                            <td class="table-secondary"><button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModal" data-ciripr-seq="`+value['spacer'].trim()+`
-                            " data-modal-type="Sequence Structure" data-file-name=`+fileID+`>`+ value['spacer'] + `</button></td>
-                            <td class="table-secondary">`+ (value['position']+value['lengths'][0]) + `</td>
+                            <td class="table-secondary"><button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModal" data-ciripr-seq="`+ value['spacer'].trim() + `
+                            " data-modal-type="Sequence Structure" data-file-name=`+ fileID + `>` + value['spacer'] + `</button></td>
+                            <td class="table-secondary">`+ (value['position'] + value['lengths'][0]) + `</td>
                             <td class="table-secondary">`+ value['lengths'][1] + `</td>
                         </tr>`;
                 } else {
                     table_content += `<tr>
-                            <td scope="row"><button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModal" data-ciripr-seq="`+value['repeat'].trim()+`
-                            " data-modal-type="Sequence Structure" data-file-name=`+fileID+`>`+ value['repeat'] + `</button></td>
+                            <td scope="row"><button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModal" data-ciripr-seq="`+ value['repeat'].trim() + `
+                            " data-modal-type="Sequence Structure" data-file-name=`+ fileID + `>` + value['repeat'] + `</button></td>
                             <td>`+ value['position'] + `</td>
                             <td>`+ value['repeat'].length + `</td>
                             <td class="table-secondary">-</td>
@@ -282,9 +290,9 @@ function getTables(isValid, data) {
             });
             table_content += `</tbody></table></div>
         <button type="button" class="btn btn-secondary " data-toggle="modal"
-            data-target="#exampleModal" data-ciripr-id="`+i+`" data-modal-type="Repeat Weblogo" data-file-name=`+fileID+`>Repeat weblogo</button>
+            data-target="#exampleModal" data-ciripr-id="`+ i + `" data-modal-type="Repeat Weblogo" data-file-name=` + fileID + `>Repeat weblogo</button>
             <button type="button" class="btn btn-secondary " data-toggle="modal"
-            data-target="#exampleModal" data-ciripr-id="`+i+`" data-crispr-length="`+data['noOfBases']+`" data-modal-type="CRISPR Structure" data-file-name=`+fileID+`>CRISPR Structure</button>
+            data-target="#exampleModal" data-ciripr-id="`+ i + `" data-crispr-length="` + data['noOfBases'] + `" data-modal-type="CRISPR Structure" data-file-name=` + fileID + `>CRISPR Structure</button>
             </p>
             </div>
         </div>`}
