@@ -1,10 +1,14 @@
 # CRISPRVisualiztion
+
+The tool can be accessed online <a href="http://crisprlstm.westus.cloudapp.azure.com:8001/">here</a>.
+
 CRISPRVisualiztion is an easy, highly interactive and intuitive way to visualize CRISPR arrays on a web page. It can be incorporated in any of the CRISPR tools, where CRISPR array visualization is requried.
 
 Steps to setup CRISPRVisualiztion:
 1. Install RNAStructure from http://rna.urmc.rochester.edu/RNAstructureDownload.html
 2. Set DATAPATH environemnt variable as [PATH_TO_RNAstructure]/data_tables
 3. Install requirements.txt using <i>pip install -r requirements.txt</i>
+4. Create 2 empty folders: 'uploaded_sequences' in root directory of the repo and 'logos' inside the 'static' directory
 
 Once the setup is done, you can run the program from the project directory using:
 python app.py
